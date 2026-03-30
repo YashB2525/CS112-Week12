@@ -1,13 +1,12 @@
 import java.io.*;
 import java.util.ArrayList;
 
+// Emily Walker's Class
 public class FileHandler {
     private String fileName;
 
     public FileHandler(String fileName) {
-
         this.fileName = fileName;
-
     }
     public String getFileName() {
         return fileName;
