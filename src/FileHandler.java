@@ -7,7 +7,7 @@ public class FileHandler {
     // Field
     private String fileName;
 
-    // Constructor
+    // Constructor which sets fileName to the string parameter passed in
     public FileHandler(String fileName) {
         this.fileName = fileName;
     }
@@ -38,9 +38,11 @@ public class FileHandler {
             in.close();
             return records;
         } catch (IOException e) {
+            // Error message displayed and null returned
             System.out.println("Error loading records: " + e.getMessage());
             return null;
         } catch (ClassNotFoundException e) {
+            // Error message displayed and null returned
             System.out.println("Error: Class not found - " + e.getMessage());
             return null;
         }
